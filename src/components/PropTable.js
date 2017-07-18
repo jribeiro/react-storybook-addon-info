@@ -65,7 +65,7 @@ function propsFromDocgen(type) {
       props[propName] = {
         property: propName,
         propType: renderDocgenPropType(propType),
-        required: docgenInfoProp.required,
+        required: docgenInfoProp.required ? 'yes' : 'no',
         description: docgenInfoProp.description,
         defaultValue: defaultValueDesc.value,
       };
