@@ -37,6 +37,8 @@ function renderDocgenPropType(propType) {
       return propType.value;
     case 'union':
       return propType.raw;
+	case 'signature':
+      return propType.raw;
     default:
       return name;
   }
